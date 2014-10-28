@@ -56,7 +56,7 @@ public class WebPageCrawlerSpout extends BaseRichSpout {
             }
         }else{
             char type = nextPage.charAt(0);
-            String url = nextPage.substring(3, nextPage.length());
+            String url = nextPage.substring(2, nextPage.length());
             this.collector.emit(new Values(type, url));
 
         }
